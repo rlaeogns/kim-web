@@ -8,11 +8,15 @@ a {
     color: white;
 }
 
+.nav {
+    width: 100px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#034c8c;
+    background-color: #101820;
 }
 
 
@@ -22,13 +26,13 @@ a {
 }
 
 .navbar_logo i {
-    font-size: 36px;
+    font-size: 24px;
     padding-right: 5px;
     
 }
 
 .navbar_logo a {
-    font-size: 36px; 
+    font-size: 24px; 
 }
 
 .navbar_menu {
@@ -43,31 +47,33 @@ a {
 }
 
 .navbar_menu li:hover {
-    background-color: #049dd9;
+    background-color: #F2AA4C;
     border-radius: 4px;
 }
 
 .navbar_log {
     display: flex;
     list-style: none;
+    margin: 10px 10px 10px 10px;
     padding-left: 0;
 }
 
-.navbar_log a {
-    font-size: 36px;
-    margin: 10px 10px 10px 10px;
-    padding-left: 41px;
+.navbar_log i {
+    font-size: 24px;
+    padding-right: 5px;
 }
-
-.navbar_log a:hover {
-    background-color: #049dd9;
-    border-radius: 4px;
-}
-
 @media screen and (max-width: 650px) {
     .navbar {
         flex-direction: column;
         align-items: center;
+    }
+
+    .navbar_logo i {
+        font-size: 36px;
+    }
+
+    .navbar_logo a {
+        font-size: 36px;
     }
 
     .navbar_menu {
