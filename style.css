@@ -17,68 +17,69 @@ a {
 }
 
 
-.navbar_logo {
+.navbar__logo {
     font-size: 24px;
     color: white;
 }
 
-.navbar_logo i {
+.navbar__logo i {
 
     color: #F2AA4C;
 }
 
-.navbar_menu {
+.navbar__menu {
     justify-self: center;
     display: flex;
     list-style: none;
     padding-left: 0;
 }
 
-.navbar_menu li {
+.navbar__menu li {
     padding: 8px 12px;
 }
 
-.navbar_menu li:hover {
+.navbar__menu li:hover {
     background-color: #F2AA4C;
     border-radius: 4px;
 }
 
-.navbar_toggleb {
+.navbar__toggleBtn {
     display: none;
     position: absolute;
-    right: 24px ;
+    right: 60px ;
     font-size: 36px;
     color: #F2AA4C;
 
 }
 @media screen and (max-width: 768px) {
     .navbar {
+        box-sizing: border-box;
         flex-direction: column;
         align-items: flex-start;
-        padding: 8px 24px;
+        padding: 8px 60px;
     }
 
-    .navbar_logo {
+    .navbar__logo {
         font-size: 36px;
     }
 
-    .navbar_menu {
+    .navbar__menu {
         display: none;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         width: 100%;
     }
 
-    .navbar_menu li {
+    .navbar__menu li {
         width: 100%;
         text-align: right;
     }
 
-    .navbar_toggleb {
+    .navbar__toggleBtn {
         display: block;
     }
 
-    .navbar_menu.active {
+    .navbar__menu.active {
       display: flex;
     }
     
